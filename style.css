@@ -1,0 +1,555 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root{
+    --hover-menu-bg: rgb(255, 255, 255);
+    --border-color: rgba(0, 0, 0, 0.35);
+
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: #deeeff;
+}
+
+nav {
+    display: flex;
+    background: #C2D1E2;
+    padding: 10px 0px ;
+    
+    align-items: center;
+    height: 30px;
+}
+
+.main {
+    display: flex; 
+    align-items: center;
+    margin-left: 18px;
+    
+}
+
+
+.main svg {
+    width: 25px;
+    height: 25px;
+    padding: 0px 10px;
+    fill: #535151;
+}
+.main svg:hover {
+    cursor: pointer;
+    fill: blue;
+
+
+}
+.learn-more {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .learn-more:focus {
+    outline: none;
+  }
+  
+
+
+.actions {
+    display: flex; 
+    align-items: center; 
+    margin-left: 35px;
+}
+
+
+.actions img {
+    width: 20px;
+    height: 20px;
+    padding: 0 10px;
+}
+
+.actions img:hover {
+    cursor: pointer;
+    background-color: #d5e4f5;
+    border-radius: 5px;
+    height: 30px;
+
+
+}
+
+.search-box {
+    background: #f6f9ff;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin-left: 30px;
+
+    
+}
+
+.search-box img {
+    height: 20px;
+    width: 20px;
+}
+
+.search-box input {
+    width: 100%;
+    background: transparent;
+    padding: 0 7px;
+    outline: none;
+    border: 0;
+    margin-left: 60px;
+    font-size: 19px;
+}
+
+.apps {
+
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+.apps img {
+    height: 30px;
+    width: 30px;
+    padding: 0 15px;
+}
+
+.apps img:hover {
+    cursor: pointer;  
+    background-color: #d5e4f5;
+    border-radius: 5px;
+    height: 38px;
+}
+
+.dropdown{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+
+}
+.dropdown img {
+    height: 20px;
+    width: 20px;
+
+
+}
+.dropdown  img:hover {
+    cursor: pointer;
+}
+.user-actions{
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+}
+
+.user-actions img {
+    padding: 10px;
+
+
+}
+.user-actions  img:hover {
+    cursor: pointer;
+} 
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px ;
+
+}
+
+
+#sidebar {
+     background: #C2D1E2;
+    position: sticky;
+    height: 94vh;
+    border-radius: 1%;
+    margin-top: 5px;
+    margin-left: 5px;
+    max-width: 250px;
+    
+  }
+#sidebar-content {
+    flex-basis: auto;
+
+  }
+
+
+  #sidebar.retracted {
+    width: 0;
+  }
+
+  #sidebar-content.expanded {
+    margin-left: 0;
+  }
+
+  #sidebar-content.hidden {
+    display: none;
+  }
+
+  #sidebarButton {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+  }
+.sidebar img{
+    margin-left: 3px;
+
+}
+.content{
+    flex-basis: 77%;
+
+}
+.linkbar {
+    background: #f2f7fa;
+    width: 220px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 12px;
+    
+}
+
+.linkbar img {
+    margin-left: 8px;
+    height: 20px;
+    width: 20px;
+}
+
+.linkbar input {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: 0;
+    margin-left: 5px;
+    font-size: 19px;
+}
+
+.formats{
+    padding: 4px 7px;
+}
+.formats img{
+    height: 30px;
+    width: 30px;
+    padding: 10px 10px;
+}
+.formats :hover{
+    cursor: pointer;  
+    background-color: #d5e4f5;
+    border-radius: 5px;
+}
+.content{
+    background-color: #C2D1E2;
+    flex-basis: 100%;
+    border-radius: 5px;
+    height: 93vh;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    align-items: center;
+    padding: 5px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.content::-webkit-scrollbar {
+    display: none; 
+}
+
+.to-do{
+    margin:15px;
+    word-wrap: break-word;
+
+
+    
+}
+.to-do :hover{
+    cursor:pointer;
+
+}
+.card {
+    width: 220px;
+    height: 80px;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 250px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, .25);
+    background-color: rgba(244, 251, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+}
+.player{
+    margin-top:47px;
+    margin-left:50px;
+}
+.player img{
+    height: 22px;
+    width:22px;
+    padding: 5px;
+
+}
+
+
+
+.add:active {
+transform: scale(0.98);
+}
+
+
+.btn-div {
+
+cursor: pointer;
+}
+
+
+
+
+
+.note {
+    background-color: #d4e1f0;
+    position: relative;
+    width:250px;
+    margin-bottom: 10px; /* Add margin-bottom to create space between notes */
+
+
+  }
+
+
+
+  .note .operation {
+    position: absolute;
+    top: 5px; /* Adjust the top position */
+    right: 12px;
+    
+  }
+
+  .note .operation button {
+    color: #000; /* Set the color for the buttons */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0px;
+  }
+  .note .operation .delete {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .note:hover .operation .delete {
+    opacity: 1;
+  }
+  .note .title {
+    background-color: #d4e1f0;
+    border-radius: 5px;
+    font-weight:500;
+    font-size: 18px;
+    padding: 5px;
+    border-bottom: 1px solid white;
+  }
+
+  .title:focus {
+    outline: none;
+  }
+
+  .note textarea {
+    outline: none;
+    font-size: 17px;
+    font-family: inherit;
+    height: 150px;
+    width: 240px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1px;
+    padding: 5px;
+    position: relative;
+    background-color: #d4e1f0; /* Change to the desired background color */
+    overflow: auto;
+    scrollbar-width: none;
+    resize: none;
+  }
+
+  .note textarea::-webkit-scrollbar {
+    display: none;
+  }
+  .timestamp {
+    text-align: right;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .note .timestamp {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .note:hover .timestamp {
+    opacity: 1;
+  }
+
+  .main-content {
+    display: flex;
+
+}
+
+.reddit, .playlist-container {
+}
+
+.post-card {
+  border: 1px solid #e2e2e2;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease;
+  max-width: 300px; /* Set the max-width */
+  overflow: hidden; /* Ensure no content overflows */
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Post title */
+.post-title {
+  font-size: 1.2em; /* Slightly reduced font-size to fit better */
+  margin-bottom: 10px;
+  word-wrap: break-word; /* Ensure the title breaks properly */
+}
+
+.post-title a {
+  color: #0079d3;
+  text-decoration: none;
+}
+
+.post-title a:hover {
+  text-decoration: underline;
+}
+
+/* Subreddit and author */
+.post-subreddit, .post-author {
+  font-size: 0.8em; /* Reduced font-size to fit better */
+  color: #888;
+  display: inline-block;
+}
+
+.post-author {
+  margin-left: 10px; /* spacing between subreddit and author */
+}
+
+/* Post image */
+.post-image {
+  height: auto;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: block;
+   width: 100%;
+    max-width: 300px; /* Or the desired width */
+    height: auto;
+
+}
+
+
+
+/* Comments and share link */
+.post-comments, .post-share {
+  font-size: 0.8em; /* Reduced font-size to fit better */
+  color: #666;
+  display: inline-block;
+  margin-right: 10px; /* Slightly reduced margin */
+}
+
+/* Timestamp */
+.post-time {
+  font-size: 0.7em; /* Reduced font-size to fit better */
+  color: #aaa;
+  display: block;
+  margin-top: 10px;
+}
+
+
+
+/* Basic reset and styling */
+
+
+
+
+.playlist-container {
+  max-width: 400px;
+  margin-left: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.video-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+  transition: background-color 0.2s;
+}
+
+.video-item:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.02);
+  cursor: pointer;
+
+}
+
+.video-thumbnail {
+  flex-shrink: 0;
+  width: 130px;
+  height: 90px; 
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 20px;
+ 
+}
+
+
+.video-details {
+  flex-grow: 1;
+}
+
+.video-title {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  font-weight: 400;
+}
+
+.video-title a {
+  text-decoration: none;
+  color: #212121;
+  transition: color 0.2s;
+}
+
+.video-title a:hover {
+  color: #FF0000;
+}
+
+.video-info, .video-views {
+  color: #777;
+  font-size: 0.7rem;
+  margin-top: 3px;
+}
+
+/* You can also add more details under video-details like channel name, views, etc. */
